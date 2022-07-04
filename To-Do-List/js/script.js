@@ -5,13 +5,17 @@ $(document).ready(function () {
   $(".submitBtn").on("click", function () {
     var btnvalue = $(this).text();
     var inputvalue = $(".input-item").val();
-    clearListFromScreen();
-    if (btnvalue.toLowerCase() == "add") {
-      addIntoList(inputvalue);
+    if (inputvalue.length > 1) {
+      clearListFromScreen();
+      if (btnvalue.toLowerCase() == "add") {
+        addIntoList(inputvalue);
+      } else {
+        updateIntoList(inputvalue);
+      }
+      clearInputField();
     } else {
-      updateIntoList(inputvalue);
+      alert("Please enter the value");
     }
-    clearInputField();
   });
   function addIntoList(val) {
     listItem.push(val);
@@ -23,6 +27,7 @@ $(document).ready(function () {
     clickedIndexValue = $(this).text();
     liClickedIndex = listItem.indexOf(clickedIndexValue);
     $(".input-item").val(clickedIndexValue);
+    $(".addEdit").toggle("fa-edit");
     $(".submitBtn").text("Update");
   });
   //updating the data into array
