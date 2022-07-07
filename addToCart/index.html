@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">Add Product</div>
+      <section class="formAndTablesection">
+        <div class="formSection">
+          <div class="inputBox">
+            <div class="productLabel productNameLabel">Product Name</div>
+            <input type="text" class="productNameBox" /><br />
+            <div class="productInputerror productNameError"></div>
+          </div>
+          <div class="inputBox">
+            <div class="productLabel">Product Quantity</div>
+            <input type="text" class="productQuantity" value="1" />
+            <div class="productInputerror productQuantityError"></div>
+          </div>
+          <div class="inputBox">
+            <div class="productLabel">Product Price</div>
+            <input type="text" class="productPrice" />
+            <div class="productInputerror productPriceError"></div>
+          </div>
+          <div class="buttonBox">
+            <button type="button" class="submitButton">Submit</button>
+          </div>
+        </div>
+        <section class="tableSection">
+          <table class="productTable">
+            <thead>
+              <td>S No</td>
+              <td>Product Name</td>
+              <td>Product Quantity</td>
+              <td>Product Price</td>
+              <td>Sub Total</td>
+              <td>Remove</td>
+            </thead>
+            <tbody></tbody>
+            <tfoot>
+              <td colspan="4">Total Price</td>
+              <td colspan="2" class="grandSum"></td>
+            </tfoot>
+          </table>
+        </section>
+      </section>
+<!-------------------Summary Section ------------------------->
+<section class="summarySection">
+  <div class="summaryHeading">Product Summary</div>
+  <table class="summaryTable">
+    <thead>
+      <td>S No</td>
+      <td>Product Quantity</td>
+      <td>Product Name</td>
+      <td>Sub Total</td>
+    </thead>
+    <tbody></tbody>
+    <tfoot>
+      <td colspan="2" >Quantity <i class="fa fa-arrow-right" aria-hidden="true"></i><span class="sumarryTotalQuantity"></span></td>
+      <td colspan="2" class="">Grand Total <i class="fa fa-arrow-right" aria-hidden="true"></i> <span class="grandSum"></span></td>
+    </tfoot>
+  </table>
+</section>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/script.js"></script>
+</html>

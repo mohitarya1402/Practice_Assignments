@@ -1,0 +1,14 @@
+  var quantityInput = $(".quantityInput").val();
+  $("tbody").on("input", "td .quantityInput", function (e) {
+      var indexis =$(this).parent("td").parent("tr").index();
+      var quantity =$(this).val();
+      console.log("index is "+indexis);
+    var actualPrice = $(this).parent().prev().siblings(".actualPrice").text();
+    console.log("quantity value is "+quantity);
+    var subTotPrice = quantity*parseInt(actualPrice);
+
+    console.log("actural price "+actualPrice);
+    var actualPrice = $(this).parent().prev().siblings(".subTotPrice").text(subTotPrice);
+console.log("sub tottal price is "+subTotPrice);
+
+  });

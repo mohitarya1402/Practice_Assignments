@@ -1,0 +1,103 @@
+body{
+  background-color: #ffffff;
+  height: 100%;
+}
+.container{
+  background-color: #2b6777;
+  margin: 1rem 5rem;
+  padding: 2rem;
+  color: white;
+  height: 85vh;
+  border-radius: 5px;
+}
+.heading{
+  font-size: 50px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: black;
+}
+.formAndTablesection {
+  display: flex;
+}
+.container .formSection{
+  padding: 10px 10px 10px 0;
+  width: 50%;
+}
+
+.formSection .inputBox
+{
+  /* display: block; */
+  margin: 20px;
+}
+.formSection .inputBox .productLabel{
+  width: 50%;
+  /* margin-right: 20px;
+  text-align: right; */
+  font-size: 20px;
+  
+}
+.formSection .inputBox input{
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.formSection .buttonBox {
+
+  margin: 20px 70px;
+  padding: 10px;
+}
+.formSection .buttonBox button{
+  padding: 10px 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+background-color: #ffffff;
+}
+.container .tableSection{
+  width: 50%;
+  height: 100%;
+  padding: 10px 0;
+
+}
+table,td,tr{
+  border-collapse: collapse;
+  border: 1px solid ;
+  padding: 10px;
+}
+.container .tableSection .productTable
+{
+  width: 100%;
+  text-align: center;
+}
+.container .tableSection .productTable td .addSubtract
+{
+  cursor: pointer;
+}
+.container .tableSection .productTable td .substractOne{
+  float: left;
+
+}
+.container .tableSection .productTable td .addOne{
+  float: right;
+}
+.removeProduct:hover{
+  cursor: pointer;
+}
+.removeProduct i{
+  font-size: 24px;
+}
+/* summary section */
+.summarySection{
+  width: 50%;
+}
+.summaryHeading{
+  width: 50%;
+  text-align: center;
+  margin: 10px;
+  font-size: 25px;
+}
+
+
+
